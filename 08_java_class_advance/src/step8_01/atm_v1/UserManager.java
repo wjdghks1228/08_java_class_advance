@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class UserManager {
 	
 	Scanner scan = new Scanner(System.in);
+	//User 라는 클래스 배열 생성
 	User[] user = null;
+	//User Count 0 
 	int userCount = 0;
 	
 	void printAllUser() {
@@ -16,6 +18,7 @@ public class UserManager {
 	
 	
 	
+	//유저 추가
 	void addUser() {
 		
 		if(userCount == 0) {
