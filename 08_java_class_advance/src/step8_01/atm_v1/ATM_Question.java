@@ -30,9 +30,7 @@ public class ATM_Question {
 				System.out.println("[메시지] 프로그램을 종료합니다.");
 				break;
 			}
-
 		}
-
 	}
 
 	void login() {
