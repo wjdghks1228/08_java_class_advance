@@ -31,41 +31,29 @@ public class ATM {
 	
 	
 	void login() {
-		
 		identifier = userManager.logUser();
-		
-		if (identifier != -1) {
+		if(identifier != -1) {
 			printAccountMenu();
 		}
 		else {
-			System.out.println("[메세지] 로그인실패.");
+			System.out.println("[메세지] 로그인에 실패하셨습니다.");
 		}
-		
 	}
 	
 	
 	void join() {	
-		
 		userManager.addUser();
 	}
 	
 	
 	void logout() {
 		
-		if (identifier == -1) {
-			System.out.println("[메시지] 로그인을 하신 후 이용하실 수 있습니다.");
-		}
-		else {
-			identifier = -1;
-			System.out.println("[메시지] 로그아웃 되었습니다.");
-		}
 		
 	}
 	
 	
 	void leave() {
 		
-		userManager.leave();
 		
 	}
 	
